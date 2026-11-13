@@ -1,0 +1,28 @@
+
+-------------------List_Dump---Start----------------
+
+Size: 1, Capacity: 16
+Head: 1, Tail: 1
+
+Index |     Data     | Next | Prev 
+---------------------------------- 
+   0  | START_POISON |   0  |   0 
+   1  | 10           |   0  |   0 
+   2  | POISON       |  -1  |  -1 
+   3  | POISON       |  -1  |  -1 
+   4  | POISON       |  -1  |  -1 
+   5  | POISON       |  -1  |  -1 
+   6  | POISON       |  -1  |  -1 
+   7  | POISON       |  -1  |  -1 
+   8  | POISON       |  -1  |  -1 
+   9  | POISON       |  -1  |  -1 
+  10  | POISON       |  -1  |  -1 
+  11  | POISON       |  -1  |  -1 
+  12  | POISON       |  -1  |  -1 
+  13  | POISON       |  -1  |  -1 
+  14  | POISON       |  -1  |  -1 
+  15  | POISON       |  -1  |  -1 
+
+-------------------List_Dump---End----------------
+
+

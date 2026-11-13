@@ -1,0 +1,75 @@
+digraph List_Dump_Graphviz
+{
+	rankdir=LR;
+	node [shape=Mrecord, fontcolor="#220808"];
+
+	bgcolor="#5D0082";
+	margin=0;
+	pad=0;
+
+	subgraph cluster_list {
+		label=<<B><FONT POINT-SIZE="40">List Dump Graphviz</FONT></B>>;
+		style="rounded,filled";
+		fillcolor="#C0BAFF";
+		color="#5D0082";
+		penwidth=10;
+		margin=30;
+
+		HEAD [shape=Mrecord, style=filled, fillcolor="#D49B45", label="HEAD | 1"];
+		TAIL [shape=Mrecord, style=filled, fillcolor="#D49B45", label="TAIL | 1"];
+
+		node_0 [label="INDEX: 0 | VALUE: START_POISON | {PREV: 0 | NEXT: 0}", style=filled, fillcolor="#544E4E"];
+
+		node_1 [label="INDEX: 1 | VALUE: 10 | {PREV: 0 | NEXT: 0}", style=filled, fillcolor="#EF9A9A"];
+
+		node_2 [label="INDEX: 2 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_3 [label="INDEX: 3 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_4 [label="INDEX: 4 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_5 [label="INDEX: 5 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_6 [label="INDEX: 6 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_7 [label="INDEX: 7 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_8 [label="INDEX: 8 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_9 [label="INDEX: 9 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_10 [label="INDEX: 10 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_11 [label="INDEX: 11 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_12 [label="INDEX: 12 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_13 [label="INDEX: 13 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_14 [label="INDEX: 14 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		node_15 [label="INDEX: 15 | VALUE: POISON | {PREV: -1 | NEXT: -1}", style=filled, fillcolor="#907A7A"];
+
+		TAIL -> HEAD [style=invis];
+		HEAD -> node_0 [style=invis];
+		node_0 -> node_1 [style=invis];
+		node_1 -> node_2 [style=invis];
+		node_2 -> node_3 [style=invis];
+		node_3 -> node_4 [style=invis];
+		node_4 -> node_5 [style=invis];
+		node_5 -> node_6 [style=invis];
+		node_6 -> node_7 [style=invis];
+		node_7 -> node_8 [style=invis];
+		node_8 -> node_9 [style=invis];
+		node_9 -> node_10 [style=invis];
+		node_10 -> node_11 [style=invis];
+		node_11 -> node_12 [style=invis];
+		node_12 -> node_13 [style=invis];
+		node_13 -> node_14 [style=invis];
+		node_14 -> node_15 [style=invis];
+	}
+
+	HEAD -> node_1 [color="#8F5600", penwidth=3, constraint=false];
+	TAIL -> node_1 [color="#8F5600", penwidth=3, constraint=false];
+
+}
